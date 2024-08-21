@@ -4,11 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aimplify Finance - AI-Powered Financial Solutions</title>
-    <link rel="icon" type="image/png" href="assets/favicon.png">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
+        .animate-earth {
+            animation: earth 15s ease-in-out infinite;
+        }
+        @keyframes earth {
+            0%, 100% { transform: translate(0, 0); }
+            50% { transform: translate(20px, -20px); }
+        }
+        .animation-delay-2000 {
+            animation-delay: 2s;
+        }
+        .animation-delay-4000 {
+            animation-delay: 4s;
+        }
+    </style>
 </head>
-<body class="bg-gradient-to-b from-gray-900 to-blue-900 text-white min-h-screen">
-    <header class="bg-black bg-opacity-30 p-4 backdrop-blur-sm">
+<body class="font-sans">
+    <div class="bg-black bg-opacity-30 p-4 backdrop-blur-sm">
         <div class="container mx-auto flex justify-between items-center">
             <h1 id="aimplify-finance" class="text-2xl font-bold">Aimplify Finance</h1>
             <nav>
@@ -17,13 +35,13 @@
                 <a href="#contact" class="hover:text-blue-300 mx-2 transition duration-300">Contact</a>
             </nav>
         </div>
-    </header>
+    </div>
 
-    <main class="container mx-auto mt-8 px-4 relative z-10">
+    <div class="container mx-auto mt-8 px-4 relative z-10" role="main">
         <section class="text-center mb-16">
             <h2 class="text-4xl font-bold mb-4">Revolutionizing Financial Operations with AI</h2>
-            <p class="text-xl mb-8">Boost efficiency and reduce errors in your financial processes</p>
-            <a href="#contact" class="bg-blue-500 bg-opacity-50 hover:bg-opacity-75 text-white font-bold py-2 px-4 rounded-full transition duration-300">Get Started</a>
+            <p>Boost efficiency and reduce errors in your financial processes</p>
+            <a href="#contact" class="inline-block mt-4 bg-blue-500 bg-opacity-50 hover:bg-opacity-75 text-white font-bold py-2 px-4 rounded-full transition duration-300">Get Started</a>
         </section>
 
         <section id="products" class="mb-16">
@@ -31,7 +49,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="bg-white bg-opacity-10 p-6 rounded-lg shadow-md backdrop-blur-sm">
                     <h4 class="text-xl font-semibold mb-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="solution-icon"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><path d="M8 13h2"/><path d="M8 17h2"/><path d="M14 13h2"/><path d="M14 17h2"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="solution-icon inline-block mr-2"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline><path d="M8 13h2"></path><path d="M8 17h2"></path><path d="M14 13h2"></path><path d="M14 17h2"></path></svg>
                         AI-Powered Spreadsheet Assistant
                     </h4>
                     <ul class="list-disc list-inside">
@@ -42,7 +60,7 @@
                 </div>
                 <div class="bg-white bg-opacity-10 p-6 rounded-lg shadow-md backdrop-blur-sm">
                     <h4 class="text-xl font-semibold mb-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="solution-icon"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="solution-icon inline-block mr-2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
                         Voice Trading Order Recorder
                     </h4>
                     <ul class="list-disc list-inside">
@@ -56,22 +74,19 @@
 
         <section id="about" class="mb-16 bg-white bg-opacity-10 p-6 rounded-lg shadow-md backdrop-blur-sm">
             <h3 class="text-2xl font-bold mb-4">About Aimplify Finance</h3>
-            <p class="mb-4">
-                Aimplify Finance is a cutting-edge technology startup focused on creating AI-powered tools to boost operational efficiency in the financial services industry. Our mission is to automate repetitive tasks and reduce human error in critical processes.
-            </p>
-            <p>
-                We leverage the latest in artificial intelligence, including generative AI and AI agents, to develop innovative solutions for investment banks, hedge funds, and other financial institutions.
-            </p>
+            <p>Aimplify Finance is a cutting-edge technology startup focused on creating AI-powered tools to boost operational efficiency in the financial services industry. Our mission is to automate repetitive tasks and reduce human error in critical processes.</p>
+            <p class="mt-4">We leverage the latest in artificial intelligence, including generative AI and AI agents, to develop innovative solutions for investment banks, hedge funds, and other financial institutions.</p>
         </section>
 
         <section id="contact" class="bg-white bg-opacity-10 p-8 rounded-lg shadow-md backdrop-blur-sm">
             <h3 class="text-2xl font-bold mb-4">Ready to transform your operations?</h3>
             <p class="mb-4">Get in touch with us to learn more about how Aimplify Finance can help streamline your financial processes.</p>
-            <a href="#" class="bg-blue-500 bg-opacity-50 hover:bg-opacity-75 text-white font-bold py-2 px-4 rounded-full transition duration-300">Contact Us</a>
+            <a href="mailto:enquiries@aimplify.finance" class="inline-block bg-blue-500 bg-opacity-50 hover:bg-opacity-75 text-white font-bold py-2 px-4 rounded-full transition duration-300">Contact Us</a>
+            <p class="mt-4 text-sm">Or email us at: <a href="mailto:enquiries@aimplify.finance" class="text-blue-300 hover:underline">enquiries@aimplify.finance</a></p>
         </section>
-    </main>
+    </div>
 
-    <footer class="container mx-auto text-center py-8">
+    <footer class="text-center mt-8 pb-4">
         <p>&copy; 2024 Aimplify Finance. All rights reserved.</p>
     </footer>
 
@@ -80,23 +95,5 @@
         <div class="absolute top-1/3 right-1/4 w-1/3 h-1/3 bg-green-300 rounded-full mix-blend-screen filter blur-3xl opacity-20 animate-earth animation-delay-2000"></div>
         <div class="absolute bottom-1/4 left-1/3 w-1/4 h-1/4 bg-white rounded-full mix-blend-screen filter blur-3xl opacity-20 animate-earth animation-delay-4000"></div>
     </div>
-
-    <style>
-        @keyframes earth {
-            0%, 100% { transform: translate(0px, 0px) scale(1); }
-            25% { transform: translate(20px, -15px) scale(1.05); }
-            50% { transform: translate(-15px, 10px) scale(0.95); }
-            75% { transform: translate(15px, 15px) scale(1.05); }
-        }
-        .animate-earth {
-            animation: earth 30s infinite;
-        }
-        .animation-delay-2000 {
-            animation-delay: -10s;
-        }
-        .animation-delay-4000 {
-            animation-delay: -20s;
-        }
-    </style>
 </body>
 </html>
